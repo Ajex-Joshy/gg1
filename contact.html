@@ -148,13 +148,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+               <div class="col-lg-6">
                     <div class="leave-comment">
-                        <form action="#">
-                            <input type="text" placeholder="Name" required>
-                            <input type="text" placeholder="Email" required>
-                            <input type="text" placeholder="Phone Number" required>
-                            <textarea placeholder="Message" required></textarea>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="f0991d65-fa82-4723-932a-c259b2332c81">
+                            <input type="text" name="Name" placeholder="Name" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="text" name="Phone Number" placeholder="Phone Number" required>
+                            <textarea placeholder="Message" name="Message" required></textarea>
                             <button type="submit">Submit</button>
                             <i class="fa fa-envelop"></i>
                         </form>
